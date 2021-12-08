@@ -18,7 +18,7 @@ class Star  //note that this class does NOT extend Floater
     setMyCenterY((int)(Math.random()*500));
   }
   public void show() {
-    fill(0);
+    fill(256, 112, 112);
     ellipse(getMyCenterX(), getMyCenterY(), 10, 10);
   }
 }
