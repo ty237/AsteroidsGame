@@ -21,6 +21,12 @@ class Asteroid extends Floater {
     myPointDirection = 0;
     rotSpeed = (Math.random()*2)+3;
   }
+    public int getMyCenterY() {
+    return (int)myCenterY;
+  }
+  public int getMyCenterX() {
+    return (int)myCenterX;
+  }
   public boolean tooClose(int shipX, int shipY) {
     double distance = dist((float)myCenterX, (float)myCenterY, (float)shipX, (float)shipY);
     return distance < 20;
